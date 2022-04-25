@@ -9,6 +9,11 @@
 <div id="form">
 <form action="/sim" class="mainForm">
   <div class="form-group">
+    <label for="constructorList">Order these constructors however you would like, or randomize them</label><br>
+    <input type="text" id="constructorListForm" value="{{ constructorListValues }}"></input>
+    <button type="button" class="btn btn-primary" onclick="randomize_constructors_for_form()">Randomize</button>
+  </div>
+  <div class="form-group">
     <label for="ConstructorDifference">How much of a difference would you like between the constructors</label><br>
     <input type="radio" id="Small CD" name="CD" value="Small">
     <label for="Small CD">Small</label><br>
