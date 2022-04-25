@@ -6,4 +6,17 @@
 
 {% block content %}
 <h1>Setup</h1>
+<div id="form">
+<form action="/sim" class="mainForm">
+  <div class="form-group">
+    <label for="ConstructorDifference">How much of a difference would you like between the constructors</label><br>
+    <input type="radio" id="Small CD" name="CD" value="Small">
+    <label for="Small CD">Small</label><br>
+    <input type="radio" id="Mid CD" name="CD" value="Mid">
+    <label for="Mid CD">Medium</label><br>
+    <input type="radio" id="Big CD" name="CD" value="Big">
+    <label for="Big CD">Large</label><br>
+  </div>
+</form>
+</div>
 {% endblock %}
